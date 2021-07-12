@@ -1,0 +1,10 @@
+{
+  "name": "@nexo/cookieconsent",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "description": "cookieconsent por to React",
+  "main": "dist/index.jsx",
+  "module": "dist/index.es.jsx",
+  "types": "dist/index.d.ts"
+}
