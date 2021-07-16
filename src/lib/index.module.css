@@ -1,0 +1,154 @@
+/* TODO: remover daqui  */
+
+/* :root{
+    --cc-bg: #fff;
+    --cc-text: #2d4156;
+    --cc-btn-primary-bg: #2d4156;
+    --cc-btn-primary-text: var(--cc-bg);
+    --cc-btn-primary-hover-bg: #1d2e38;
+    --cc-btn-secondary-bg: #eaeff2;
+    --cc-btn-secondary-text: var(--cc-text);
+    --cc-btn-secondary-hover-bg: #d8e0e6;
+    --cc-toggle-bg-off: #919ea6;
+    --cc-toggle-bg-on: var(--cc-btn-primary-bg);
+    --cc-toggle-bg-readonly: #d5dee2;
+    --cc-toggle-knob-bg: #fff;
+    --cc-toggle-knob-icon-color: #ecf2fa;
+    --cc-cookie-category-block-bg: #f0f4f7;
+    --cc-cookie-category-block-bg-hover: #e9eff4;
+    --cc-section-border: #f1f3f5;
+    --cc-cookie-table-border: #e9edf2;
+    --cc-overlay-bg: rgba(4, 6, 8, .85);
+    --cc-webkit-scrollbar-bg: #cfd5db;
+    --cc-webkit-scrollbar-bg-hover: #9199a0;
+} */
+
+.main_container *,
+.main_container ::before,
+.main_container ::after {
+    position: "fixed";
+    z-index: 1000000;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: none;
+    font-style: inherit;
+    font-variant: normal;
+    font-weight: inherit;
+    font-family: inherit;
+    line-height: 1.2;
+    font-size: 1em;
+    transition: none;
+    animation: none;
+    margin: 0;
+    padding: 0;
+    text-transform: none;
+    letter-spacing: unset;
+    color: inherit;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-align: left;
+    visibility: unset;
+}
+
+.main_container {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: -apple-system, sans-serif;
+    color: #2d4156;
+    color: var(--cc-text);
+}
+
+.main_container .consent_primary_btn,
+.main_container .block_title_btn,
+.settings_title,
+.consent_title,
+.settings_blocks td:before {
+    font-weight: bold;
+}
+
+.consent_modal,
+.settings_inner,
+.main_container .block_section,
+.main_container .block_title_btn,
+.settings_blocks .act .block_table_container {
+    border-radius: 0.25em;
+}
+
+.consent_modal,
+.main_container input,
+.main_container button,
+.main_container a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.main_container a {
+    text-decoration: underline;
+}
+.main_container a:hover {
+    text-decoration: none;
+}
+
+/* TODO: adicionar propriedades no modal abaixo   
+
+    opacity: 0;
+    visibility: hidden; */
+.consent_modal {
+    font-family: inherit;
+    padding: 1.2em 2.2em 1.825em 2.2em;
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    background: var(--cc-bg);
+    max-width: 25em;
+    width: 100%;
+    bottom: 1.25em;
+    right: 1.25em;
+    box-shadow: 0 0.625em 1.875em #000000;
+    box-shadow: 0 0.625em 1.875em rgba(2, 2, 3, 0.28);
+    transform: scale(0.95);
+    line-height: initial;
+}
+
+.consent_title {
+    margin: 0 0 0.6em 0;
+    font-size: 1.3em;
+}
+
+.consent_text {
+    margin-bottom: 1.625em;
+    font-size: 0.9em;
+    line-height: 1.45em;
+}
+
+.main_container .consent_primary_btn {
+    color: #40505a;
+    color: var(--cc-btn-secondary-text);
+    background: #e5ebef;
+    background: var(--cc-btn-secondary-bg);
+    padding: 1em 1.6em;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.85em;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.consent_modal .consent_primary_btn {
+    width: 48.5%;
+}
+
+.consent_buttons button + button,
+.settings_container button + button,
+.settings_close_btn {
+    float: right;
+}
