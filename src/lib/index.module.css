@@ -1,6 +1,4 @@
-/* TODO: remover daqui  */
-
-/* :root{
+:root {
     --cc-bg: #fff;
     --cc-text: #2d4156;
     --cc-btn-primary-bg: #2d4156;
@@ -18,10 +16,10 @@
     --cc-cookie-category-block-bg-hover: #e9eff4;
     --cc-section-border: #f1f3f5;
     --cc-cookie-table-border: #e9edf2;
-    --cc-overlay-bg: rgba(4, 6, 8, .85);
+    --cc-overlay-bg: rgba(4, 6, 8, 0.85);
     --cc-webkit-scrollbar-bg: #cfd5db;
     --cc-webkit-scrollbar-bg-hover: #9199a0;
-} */
+}
 
 .main_container *,
 .main_container ::before,
