@@ -91,6 +91,28 @@
     text-decoration: none;
 }
 
+/* animation of elements  */
+
+.c--anim .consent_modal,
+.c--anim .settings_container,
+.c--anim .settings_inner,
+.overlay{
+    transition: visibility .25s ease, opacity .25s ease, transform .25s ease!important;
+}
+
+.c--anim .consent_primary_btn{
+    transition: background-color .25s ease!important;
+}
+
+/* //TODO: is wrong here possibily */
+
+.c--anim .consent_modal.bar.slide,
+.c--anim .bar.slide .settings_inner{
+    transition: visibility .4s ease, opacity .4s ease, transform .4s ease!important;
+}
+
+
+
 /* TODO: adicionar propriedades no modal abaixo   
 
     opacity: 0;
