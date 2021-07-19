@@ -1,5 +1,8 @@
+//TODO: 
+
 import * as React from "react";
 import styles from "./index.module.css";
+import CookieConsentSettings from './settings'
 
 const tmp_setting = {
     title: "👋 It's time for some nice cookies",
@@ -14,7 +17,7 @@ const tmp_setting = {
         role: "settings", //'settings' or 'accept_necessary'
     },
     settings_modal: {
-        title: 'Cookie preferences',
+        title: "Cookie preferences",
         save_settings_btn: "Save current selection",
         accept_all_btn: "Accept all",
         close_btn_label: "Close",
@@ -24,6 +27,24 @@ const tmp_setting = {
             { col3: "Expiration" },
         ],
     },
+    blocks: {
+        title: "Cookie usage",
+        description: "description here",
+    },
+    blocks_section: {
+        b1: {
+            title: "title of b1 here",
+            description: "description of b1 here",
+        },
+        b2: {
+            title: "title of b2 here",
+            description: "description of b2 here",
+        },
+        b3: {
+            title: "title of b3 here",
+            description: "description of b3 here",
+        },
+    },
 };
 
 export default function CookieConsent(props) {
@@ -31,7 +52,7 @@ export default function CookieConsent(props) {
         <>
             <div className={styles["main_container"]} id="cc--main">
                 <div className="overlay">overlay</div>
-                <div id="cc_div" class="cc_div">
+                <div id="cc_div" className="cc_div">
                     <div className={styles["consent_modal"]}>
                         <div className={styles["consent_modal_inner"]}>
                             <div
@@ -58,49 +79,7 @@ export default function CookieConsent(props) {
                             </div>
                         </div>
                     </div>
-                    <div className={styles["settings_container"]}>
-                        <div className={styles["settings_container_valign"]}>
-                            <div className={styles["settings"]}>
-                                <div
-                                    className={
-                                        styles["settings_container_inner"]
-                                    }
-                                >
-                                    <div className={styles["settings_inner"]}>
-                                        <div
-                                            className={
-                                                styles["settings_header"]
-                                            }
-                                        >
-                                            <div
-                                                className={
-                                                    styles["settings_title"]
-                                                }
-                                            >
-                                                {/* TODO: add ref to creator @nexo-tec on subtitle*/}
-                                                {tmp_setting.settings_modal.title}
-                                            </div>
-                                            <div className={styles["settings_close_btn_container"]}>
-                                                <button className="settings_close_btn"> X </button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            className={
-                                                styles["settings_blocks"]
-                                            }
-                                        >
-                                            
-                                        </div>
-                                        <div
-                                            className={
-                                                styles["settings_buttons"]
-                                            }
-                                        ></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <CookieConsentSettings/>
                 </div>
             </div>
         </>
